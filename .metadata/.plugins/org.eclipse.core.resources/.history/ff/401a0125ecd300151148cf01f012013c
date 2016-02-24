@@ -1,0 +1,10 @@
+package com.proptiger.repo;
+
+import com.proptiger.model.Images;
+
+@Repository
+public interface ImageDetailsDao extends JpaRepository<Images,Integer>
+{
+
+	
+}

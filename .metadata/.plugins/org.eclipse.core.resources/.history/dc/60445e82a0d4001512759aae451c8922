@@ -1,0 +1,16 @@
+package com.proptiger.repo;
+
+import java.net.URI;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.proptiger.model.Tags;
+
+@Repository
+public interface TagsDao extends JpaRepository<Tags, Integer> {
+	
+	@Query(value = "insert into newTags VALUES (?1, ?2, ?3, ?4)", nativeQuery = true)
+	public void insertNewTags(int id, URI imageUrl, String tag, double prob);
+}

@@ -1,0 +1,5 @@
+package com.proptiger.service;
+
+public class ImageService {
+
+}

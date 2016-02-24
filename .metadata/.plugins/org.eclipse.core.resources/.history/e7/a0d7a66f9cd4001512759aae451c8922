@@ -1,0 +1,5 @@
+package com.proptiger.repo;
+
+public class TagsDao {
+
+}

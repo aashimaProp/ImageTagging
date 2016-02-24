@@ -1,0 +1,35 @@
+package com.proptiger.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.proptiger.service.ImageService;
+
+@Controller
+public class ImageController {
+
+	@Autowired
+	private ImageService imageService;
+
+	@RequestMapping("abc")
+	public void getTags() {
+		System.out.println("Hello All!");
+		imageService.getFromExisting();
+
+		//imageService.fetchFromApi();
+		/*
+		 * ClarifaiClient clarifai = new ClarifaiClient(APP_ID, APP_SECRET);
+		 * List<RecognitionResult> results = clarifai.recognize(new
+		 * RecognitionRequest(new File("3.jpeg")));
+		 * 
+		 * for (Tag tag : results.get(0).getTags()) {
+		 * System.out.println(tag.getName() + ": " + tag.getProbability()); }
+		 * List<Images> images = imageService.getTags();
+		 * 
+		 * for (ListIterator<Images> iter = images.listIterator();
+		 * iter.hasNext();) { Images img = iter.next();
+		 * System.out.println(img.getTag()); }
+		 */
+	}
+}

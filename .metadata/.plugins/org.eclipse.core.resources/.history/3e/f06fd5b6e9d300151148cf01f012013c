@@ -1,0 +1,5 @@
+package com.proptiger.config;
+
+public class WebAppConfig {
+
+}

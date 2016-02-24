@@ -1,0 +1,14 @@
+package com.proptiger.controller;
+
+@Controller
+public class ImageController {
+
+	@Autowired
+	private ImageService imageService;
+	
+	@RequestMapping("/")
+	public void getTags()
+	{
+		System.out.println("Hello All!");
+	}
+}

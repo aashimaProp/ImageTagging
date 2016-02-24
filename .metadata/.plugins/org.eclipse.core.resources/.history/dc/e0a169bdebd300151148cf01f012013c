@@ -1,0 +1,8 @@
+package com.proptiger.repo;
+
+@Repository
+public interface ImageDao extends JpaRepository<Images,Integer>
+{
+
+	
+}

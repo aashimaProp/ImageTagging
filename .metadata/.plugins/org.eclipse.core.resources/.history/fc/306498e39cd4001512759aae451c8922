@@ -1,0 +1,10 @@
+package com.proptiger.service;
+
+import java.util.List;
+
+import com.proptiger.model.Images;
+
+public interface ImageService {
+
+	List<Images> getTags();
+}

@@ -1,0 +1,30 @@
+package com.proptiger.model;
+
+import java.net.URI;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tags")
+public class Tags {
+
+	@Id
+	@GeneratedValue
+	@Column(name = "id")
+	private int id;
+
+	@Column(name = "imageUrl")
+	private URI url;
+
+	@Column(name = "tag")
+	private String tag;
+	
+	@Column(name = "probability")
+	private double probability;
+
+	
+}
